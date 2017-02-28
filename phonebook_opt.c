@@ -24,3 +24,15 @@ entry *append(char lastName[], entry *e)
 
     return e;
 }
+
+unsigned int BKDRHash(char *str)
+{
+    unsigned int seed = 131;
+    unsigned int hash = 0;
+
+    while (*str) {
+        hash = hash * seed + (*str++);
+    }
+
+    return hash;
+}

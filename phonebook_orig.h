@@ -3,6 +3,7 @@
 
 #define MAX_LAST_NAME_SIZE 16
 
+#define OPT 0
 /* original version */
 typedef struct __PHONE_BOOK_ENTRY {
     char lastName[MAX_LAST_NAME_SIZE];
@@ -20,5 +21,6 @@ typedef struct __PHONE_BOOK_ENTRY {
 
 entry *findName(char lastName[], entry *pHead);
 entry *append(char lastName[], entry *e);
+unsigned int BKDRHash(char *str);
 
 #endif

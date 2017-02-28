@@ -26,3 +26,8 @@ entry *append(char lastName[], entry *e)
 
     return e;
 }
+
+unsigned int BKDRHash(char *str)
+{
+    return 0;
+}
